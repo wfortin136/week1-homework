@@ -19,3 +19,11 @@ planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Saturn', 'Jupiter', 'Uranus', '
 #
 # Your code goes here:
 #
+###########################
+#iterate through each element and obtain index of each element
+#print the index + 1 and array value
+
+planets.each_with_index do |planet, index|
+  puts "Planet #{index+1}: #{planet}"
+end
+

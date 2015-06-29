@@ -15,11 +15,13 @@ json_data = open("http://api.openweathermap.org/data/2.5/weather?q=#{location}&u
 # (You will need to figure out what kind of structure it is)
 data = JSON.parse(json_data)
 
-
 # 1. TO DO:
 # Replace the following 0 with an expression
 # that will extract the temperature
-temp = 0
+
+##########################
+# Extracted from the hash using the key value pairs 
+temp = data["main"]["temp"]
 
 # Output the temperature to the screen
 puts "It is currently #{temp.round(0)}\u00B0 outside."
