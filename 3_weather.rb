@@ -3,7 +3,8 @@ require 'open-uri'
 require 'json'
 
 # Our classroom location
-location = "5555 South Ellis Avenue, Chicago, Illinois, 60637"
+#location = "5555 South Ellis Avenue, Chicago, Illinois, 60637"
+location = "60637"
 
 # Convert to an HTTP-compatible querystring parameter
 location = URI.escape(location)
